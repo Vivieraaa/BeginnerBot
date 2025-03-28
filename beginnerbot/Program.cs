@@ -9,7 +9,7 @@ namespace beginnerbot
             DotNetEnv.Env.TraversePath().Load();
 
             string botToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
-            if (string.IsNullOrEmpty(botToken))
+            if (string.IsNullOrEmpty(botToken)) //check if token is there
             {
                 Console.WriteLine("Bot token broke.");
                 Environment.Exit(1);
