@@ -2,7 +2,7 @@
 
 namespace beginnerbot
 {
-    class Program
+    public class Program
     {
         static async Task Main(string[] args)
         {
@@ -11,7 +11,7 @@ namespace beginnerbot
             string botToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
             if (string.IsNullOrEmpty(botToken)) //check if token is there
             {
-                Console.WriteLine("Bot token broke.");
+                Console.WriteLine("Bot token does not exist.");
                 Environment.Exit(1);
             }
 
